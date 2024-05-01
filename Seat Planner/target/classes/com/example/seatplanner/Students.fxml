@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seatplanner.StudentsController">
+   <children>
+      <Label fx:id="errorText" alignment="CENTER" layoutX="158.0" layoutY="294.0" prefHeight="17.0" prefWidth="422.0" textFill="#ff00b2" />
+      <ListView fx:id="studentListView" layoutX="704.0" layoutY="225.0" prefHeight="350.0" prefWidth="359.0" />
+      <Button fx:id="removeButton" layoutX="827.0" layoutY="134.0" mnemonicParsing="false" onAction="#removeName" prefHeight="61.0" prefWidth="113.0" text="Remove" />
+      <Button fx:id="addButton" layoutX="304.0" layoutY="401.0" mnemonicParsing="false" onAction="#addName" prefHeight="61.0" prefWidth="111.0" text="Add" />
+      <TextField fx:id="nameBox" layoutX="244.0" layoutY="333.0" onAction="#addName" prefHeight="49.0" prefWidth="236.0" />
+      <Button layoutX="26.0" layoutY="23.0" mnemonicParsing="false" onAction="#switchToMenu" text="Done!" />
+      <Label fx:id="exitText" alignment="TOP_LEFT" layoutX="14.0" layoutY="75.0" prefHeight="17.0" prefWidth="248.0" textFill="RED" />
+   </children>
+</AnchorPane>
